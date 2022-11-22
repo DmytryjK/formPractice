@@ -1,0 +1,143 @@
+.choose-languages {
+    padding: 50px 0;
+    &__title:before {
+        content: '2';
+    }
+    &__wrapper {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+    }
+    &__from {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &__to {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__name-to, &__name-from {
+        text-align: right;
+        font-weight: 600;
+        color: $dark-color;
+        text-transform: uppercase;
+        min-width: 50px;
+    }
+    &__select-wrapper {
+        position: relative;  
+        cursor: pointer;
+        &:after {
+            content: '\2B9F';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            color: $dark-color;
+            pointer-events: none;
+            transition: 0.2s ease-in-out color;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 40px;
+            width: 2px;
+            height: calc(100% - 2px);
+            background-color: $light-dark-color;
+            pointer-events: none;
+            transition: 0.2s ease-in-out background-color;
+        }
+        &:hover {
+            &:after  {
+                color: $light-color;
+            }
+            &:before {
+                background-color: $light-color;
+            }
+        }
+    }
+    &__select {
+        padding: 10px 50px 10px 20px;
+        min-height: 50px;
+        min-width: 150px;
+        color: $dark-color;
+        font-weight: 600;
+        border: 1px solid $dark-color;
+        background-color: $light-color;
+        border-radius: 5px;
+        appearance: none;
+        outline-offset: 2px;
+        outline-color: $dark-color;
+        cursor: pointer;
+        transition: 0.2s ease-in-out background-color, 0.2s ease-in-out;
+        &:hover {
+            background-color: $first-accent;
+            color: $light-color;
+        }
+        &:focus {
+            background-color: $first-accent;
+            color: $light-color;
+        }
+    }
+    &__remove-btn {
+        background-color: transparent;
+        border: none;
+        display: inline;
+        cursor: pointer;
+        &:hover {
+            .choose-languages__remove-icon {
+                fill: $first-accent;
+                stroke: black;
+            }
+        }
+    }
+    &__remove-icon {
+        display: block;
+        width: 25px;
+        height: 25px;
+        fill: $light-dark-color;
+        stroke: $dark-color;
+        stroke-width: 16px;
+        transition: 0.2s ease-in-out fill, 0.2s ease-in-out stroke;
+    }
+
+    &__add-btn {
+        position: relative;
+        background-color: $light-color;
+        border: 1px solid $dark-color;
+        border-radius: 5px;
+        padding: 5px 20px;
+        padding-left: 40px;
+        outline: none;
+        white-space: nowrap;
+        user-select: none;
+        font-weight: 600;
+        font-size: 16px;
+        height: 50px;
+        color: $dark-color;
+        transition: 0.2s ease-in-out background-color, 0.2s ease-in-out color;
+        cursor: pointer;
+        &:before {
+            content: '+';
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: $dark-color;
+            transition: 0.2s ease-in-out color;
+        }
+        &:hover {
+            background-color: $first-accent;
+            color: $light-color;
+            &:before {
+                color: $light-color;
+            }
+        }
+    }
+}

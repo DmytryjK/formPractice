@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.container-inner {
+    width: 100%;
+    padding: 0 120px;
+    margin: 0 auto;
+}
+
+.main-page {
+    padding-top: 50px;
+    background-color: #edeef5;
+    min-height: 100vh;
+    position: relative;
+}
+
+.form {
+    background-color: white;
+    border: 1px solid $light-dark-color;
+    border-radius: 5px;
+}
+
+.content { 
+    padding: 100px 0px;
+    &__title {
+        visibility: hidden;
+        height: 0px;
+    }
+}

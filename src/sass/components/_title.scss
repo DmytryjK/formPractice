@@ -1,0 +1,21 @@
+.title {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: $dark-color;
+    &:before {
+        content:'';
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -70px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 1px solid $dark-color;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        user-select: none;
+    }
+}

@@ -1,0 +1,19 @@
+@import './fonts';
+@import './variables';
+
+@import './components/buttons';
+@import './components/title';
+@import './components/radio';
+
+@import './main.scss';
+@import './sections/header';
+@import './sections/your-order';
+@import './sections/translate';
+@import './sections/upload';
+@import './sections/choose-languages';
+@import './sections/tone-and-urgency';
+@import './sections/payment';
+@import './sections/agreement-and-order';
+@import './sections/footer';
+
+@import './adaptive/media';
