@@ -17,7 +17,7 @@
                 color: $light-color;
             }
             .upload__files-input:after {
-                background: url('../../icons/upload-active.svg') center center/cover no-repeat;
+                background: url('../icons/upload-active.svg') center center/cover no-repeat;
             }
         }
     }
@@ -52,7 +52,7 @@
         }
         &:after {
             content: '';
-            background: url('../../icons/upload.svg') center center/cover no-repeat;
+            background: url('../icons/upload.svg') center center/cover no-repeat;
             display: block;
             position: absolute;
             top: 50%;
@@ -95,7 +95,7 @@
                 left: 0px;
                 top: 50%;
                 transform: translateY(-50%);
-                background: url('../../icons/files.svg') center center/cover no-repeat;
+                background: url('../icons/files.svg') center center/cover no-repeat;
                 width: 25px;
                 height: 25px;
             }

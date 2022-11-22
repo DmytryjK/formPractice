@@ -11,7 +11,7 @@
         max-width: 305px;
         color: $light-dark-color;
         &__title:before {
-            background: url('../../icons/heart.svg') center center/cover no-repeat;
+            background: url('../icons/heart.svg') center center/cover no-repeat;
         }
         &__descr {
             font-size: 14px;
@@ -21,7 +21,7 @@
 
     .contacts {
         &__title:before {
-            background: url('../../icons/compass.svg') center center/cover no-repeat;
+            background: url('../icons/compass.svg') center center/cover no-repeat;
         }
         &__info {
             padding-left: 45px;
@@ -44,7 +44,7 @@
 
     .social {
         &__title:before {
-            background: url('../../icons/share.svg') center center/cover no-repeat;
+            background: url('../icons/share.svg') center center/cover no-repeat;
         }
         &__list {
             padding-left: 45px;
