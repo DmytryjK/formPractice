@@ -334,7 +334,7 @@
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   left: -35px;
-  background: url("../../icons/clipboard.svg") center center/cover no-repeat;
+  background: url("../icons/clipboard.svg") center center/cover no-repeat;
   width: 25px;
   height: 25px;
 }
@@ -408,7 +408,7 @@
           transform: translateY(-50%);
   width: 35px;
   height: 35px;
-  background: url("../../icons/lifebuoy.svg") center center/cover no-repeat;
+  background: url("../icons/lifebuoy.svg") center center/cover no-repeat;
 }
 .your-order .help-center__descr {
   margin-top: 15px;
@@ -619,7 +619,7 @@
   color: #edeef5;
 }
 .upload__files-label:hover .upload__files-input:after {
-  background: url("../../icons/upload-active.svg") center center/cover no-repeat;
+  background: url("../icons/upload-active.svg") center center/cover no-repeat;
 }
 .upload__files-input::-webkit-file-upload-button {
   visibility: hidden;
@@ -666,7 +666,7 @@
 }
 .upload__files-input:after {
   content: "";
-  background: url("../../icons/upload.svg") center center/cover no-repeat;
+  background: url("../icons/upload.svg") center center/cover no-repeat;
   display: block;
   position: absolute;
   top: 50%;
@@ -714,7 +714,7 @@
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: url("../../icons/files.svg") center center/cover no-repeat;
+  background: url("../icons/files.svg") center center/cover no-repeat;
   width: 25px;
   height: 25px;
 }
@@ -1067,7 +1067,7 @@
 }
 .urgency__timeline-title:before {
   content: "";
-  background: url("../../icons/info.svg") center center/cover no-repeat;
+  background: url("../icons/info.svg") center center/cover no-repeat;
   display: block;
   position: absolute;
   top: 50%;
@@ -1354,14 +1354,14 @@
   color: #d0d5e5;
 }
 .footer .about-us__title:before {
-  background: url("../../icons/heart.svg") center center/cover no-repeat;
+  background: url("../icons/heart.svg") center center/cover no-repeat;
 }
 .footer .about-us__descr {
   font-size: 14px;
   padding-left: 45px;
 }
 .footer .contacts__title:before {
-  background: url("../../icons/compass.svg") center center/cover no-repeat;
+  background: url("../icons/compass.svg") center center/cover no-repeat;
 }
 .footer .contacts__info {
   padding-left: 45px;
@@ -1382,7 +1382,7 @@
   color: #03a79f;
 }
 .footer .social__title:before {
-  background: url("../../icons/share.svg") center center/cover no-repeat;
+  background: url("../icons/share.svg") center center/cover no-repeat;
 }
 .footer .social__list {
   padding-left: 45px;
