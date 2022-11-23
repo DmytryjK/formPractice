@@ -11,6 +11,7 @@
 
 <body>
     <header class="header">
+        <h1 class="header__title" style="position: absolute; visibility: hidden; height: 1px; width: 1px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0">Translation order form</h1>
         <div class="container">
             <button class="main-btn header__btn-back" type="button">
                 <svg class="header__icon-back" height="35" width="35">
@@ -34,25 +35,25 @@
             <form class="form" action="post">
                 <header class="your-order form__your-order">
                     <div class="your-order__text">
-                        <h2 class="your-order__title">Your order</h2>
-                        <ul class="your-order__list">
-                            <li class="your-order__item">
-                                <h3 class="your-order__subtitle">Items</h3>
-                                <p class="your-order__text-info">2 documents</p>
-                            </li>
-                            <li class="your-order__item">
-                                <h3 class="your-order__subtitle">Details</h3>
-                                <p class="your-order__text-info">2 lanuages</p>
-                            </li>
-                            <li class="your-order__item">
-                                <h3 class="your-order__subtitle">Price</h3>
-                                <p class="your-order__text-info">$ 696.06</p>
-                            </li>
-                            <li class="your-order__item">
-                                <h3 class="your-order__subtitle">Delivery</h3>
-                                <p class="your-order__text-info">48 hours*</p>
-                            </li>
-                        </ul>
+                        <h3 class="your-order__title">Your order</h3>
+                        <dl class="your-order__list">
+                            <div class="your-order__item">
+                                <dt class="your-order__subtitle">Items</dt>
+                                <dd class="your-order__text-info">2 documents</dd>
+                            </div>
+                            <div class="your-order__item">
+                                <dt class="your-order__subtitle">Details</dt>
+                                <dd class="your-order__text-info">2 lanuages</dd>
+                            </div>
+                            <div class="your-order__item">
+                                <dt class="your-order__subtitle">Price</dt>
+                                <dd class="your-order__text-info">$ 696.06</dd>
+                            </div>
+                            <div class="your-order__item">
+                                <dt class="your-order__subtitle">Delivery</dt>
+                                <dd class="your-order__text-info">48 hours*</dd>
+                            </div>
+                        </dl>
                     </div>
                     <div class="your-order__btns">
                         <input class="main-btn your-order__placeorder-btn" type="submit" value="Place order">
@@ -69,10 +70,10 @@
                     </div>
                 </header>
                 <section class="content form__content">
-                    <h2 class="content__title" style="visibility: hidden; height: 0px" >Translation order form</h2>
+                    <h3 class="content__title" >Customer data for language translation</h3>
                     <div class="container-inner">
                         <section class="translate">
-                            <h2 class="title translate__title">Select what you want to translate</h2>
+                            <h4 class="title translate__title" style="visibility: hidden; height: 0px">Select what you want to translate</h4>
                             <div class="translate__radio-block">
                                 <label class="translate__radio-label">
                                     <span class="translate__radio-title">Website</span>
@@ -96,7 +97,7 @@
                         </section>
                             
                         <section class="upload form__upload">
-                            <h2 class="title upload__title">Upload your documents <span>(Doc, Docx, Text, PDF, Markdown)</span></h2>
+                            <h4 class="title upload__title">Upload your documents <span>(Doc, Docx, Text, PDF, Markdown)</span></h4>
                             <label class="upload__files-label">
                                 <input class="upload__files-input" type="file">
                             </label>
@@ -147,13 +148,13 @@
                         </section>
 
                         <section class="choose-languages form__choose-languages">
-                            <h2 class="title choose-languages__title">Choose your languages pairings</h2>
+                            <h4 class="title choose-languages__title">Choose your languages pairings</h4>
                             <div class="choose-languages__wrapper">
                                 <div class="choose-languages__from">
                                     <span class="choose-languages__name-from">From</span>
                                     <div class="choose-languages__select-wrapper">
                                         <select class="choose-languages__select" name="select-from" required>
-                                            <option value="">Language</option>
+                                            <option value="" disabled selected>Language</option>
                                             <option value="English">English</option>
                                             <option value="Arabic">Arabic</option>
                                             <option value="Kurdish">Kurdish</option>
@@ -165,7 +166,7 @@
                                     <span class="choose-languages__name-to">To</span>
                                     <div class="choose-languages__select-wrapper">
                                         <select class="choose-languages__select" name="select-to">
-                                            <option value="">Language</option>
+                                            <option value="" disabled selected>Language</option>
                                             <option value="English">English</option>
                                             <option value="Arabic">Arabic</option>
                                             <option value="Kurdish">Kurdish</option>
@@ -173,7 +174,7 @@
                                     </div>
                                     <div class="choose-languages__select-wrapper">
                                         <select class="choose-languages__select" name="select-to">
-                                            <option value="">Language</option>
+                                            <option value="" disabled selected>Language</option>
                                             <option value="English">English</option>
                                             <option value="Arabic">Arabic</option>
                                             <option value="Kurdish">Kurdish</option>
@@ -191,7 +192,7 @@
 
                         <section class="tone-and-urgency">
                             <div class="tone__wrapper">
-                                <h2 class="title tone__title">Select your desired tone</h2>
+                                <h4 class="title tone__title">Select your desired tone</h4>
                                 <div class="tone__radio-block">
                                     <label class="default-radio tone__default-radio">
                                         <span class="default-radio__title">
@@ -227,7 +228,7 @@
                             </div>
 
                             <div class="urgency__wrapper">
-                                <h2 class="title urgency__title">Tell us how urgent this job it</h2>
+                                <h4 class="title urgency__title">Tell us how urgent this job it</h4>
                                 <fieldset class="urgency__timeline">
                                     <label class="urgency__timeline-label">
                                         <input type="radio" class="urgency__timeline-input" value="got time" name="timeline" required>
@@ -243,14 +244,14 @@
                                     </label>
                                 </fieldset>
                                 <div class="urgency__timeline-info">
-                                    <h3 class="urgency__timeline-title">Timeline info</h3>
+                                    <h4 class="urgency__timeline-title">Timeline info</h4>
                                     <p class="urgency__timeline-descr urgency__timeline-descr_mgt20">With an <span>AVARAGE</span> timeline set up, our expert translator can take a reasonable amount of time perfecting your translation</p>
                                 </div>
                             </div>
                         </section>
 
                         <section class="payment">
-                            <h2 class="title payment__title">Sign up and choose a payment method</h2>
+                            <h4 class="title payment__title">Sign up and choose a payment method</h4>
                             <span class="payment__note">Already have an account with us? <a class="payment__link" href="#" >Sign in</a>.
                             </span>
                             <div class="autorization payment__autorization">
@@ -306,7 +307,7 @@
                         </section>
 
                         <section class="agreement-and-order">
-                            <h2 class="agreement-and-order__title">Agreement and placing order</h2>
+                            <h4 class="agreement-and-order__title">Agreement and placing order</h4>
                             <label class="agreement-and-order__label">
                                 <input type="checkbox" class="agreement-and-order__input" required>
                                 <span>I agree to the <a class="agreement-and-order__link" href="/Terms">Terms & Conditions</a></span>
